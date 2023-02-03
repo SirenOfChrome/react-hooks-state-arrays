@@ -6,7 +6,9 @@ function SpicyFoodList() {
 
   function handleAddFood() {
     const newFood = getNewRandomSpicyFood();
-    console.log(newFood);
+    const newFoodArray = [...foods, newFood];
+    setFoods(newFoodArray);
+    console.log(newFoodArray);
   }
 
   const foodList = foods.map((food) => (
@@ -24,3 +26,5 @@ function SpicyFoodList() {
 }
 
 export default SpicyFoodList;
+//GDC#4
+
